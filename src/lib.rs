@@ -47,6 +47,10 @@ impl PidFd {
             .and_then(|pid| unsafe { Self::open(pid, 0) })
     }
 
+    pub unsafe fn from_raw_fd(pidfd: RawFd) -> Self {
+        Self(pidfd)
+    }
+
     pub fn into_future(self) -> PidFuture {
         self.into()
     }
