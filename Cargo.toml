@@ -1,5 +1,5 @@
 [package]
-name = "pidfd"
+name = "nsproxy-pidfd"
 version = "0.2.4"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
